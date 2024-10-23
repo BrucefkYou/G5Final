@@ -43,6 +43,22 @@ app.get("/product/summary", (req, res) => {
   res.send("明細頁");
 });
 
+app.get("/api/users/", (req, res) => {
+  const users = db.data.user.map((u) => {
+    const { id, password, ...others } = u;
+    return others;
+  });
+  const message = `獲取所有使用者的資料`;
+  res.status(200).json({ result: "success", message, data: users });
+});
+
+app.get("/api/users/search", (req, res) => {
+  const { id } = req.query;
+  const result = db.data.user.filter((u) => u.account.includes(id));
+  const message = `${id} 的資料搜尋成功`;
+  res.status(200).json({ result: "success", message, data: result });
+});
+
 app.listen(3005, () => {
   console.log("server is running at http://localhost:3005");
 });
