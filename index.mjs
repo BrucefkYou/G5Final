@@ -49,6 +49,9 @@ app.get("/member/Communicator/create", (req, res) => {
   res.send("(會員)師資註冊");
 });
 
+
+
+
 app.get("/api/users/search", (req, res) => {
   const { id } = req.query;
   const result = db.data.user.filter((u) => u.account.includes(id));
@@ -58,6 +61,7 @@ app.get("/api/users/search", (req, res) => {
 app.get("/join", (req, res) => {
   res.send("活動");
 });
+
 app.get("/join/123", (req, res) => {
   res.send("活動123");
 });
