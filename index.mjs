@@ -40,7 +40,7 @@ app.get("/product", (req, res) => {
   res.send("商品頁");
 });
 app.get("/product/summary", (req, res) => {
-  res.send("明細頁");
+  res.send("明細頁111");
 });
 
 app.listen(3005, () => {
