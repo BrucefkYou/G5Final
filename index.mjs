@@ -40,17 +40,17 @@ app.get("/product", (req, res) => {
   res.send("商品頁");
 });
 app.get("/product/summary", (req, res) => {
-  res.send("明細頁111");
+  res.send("明細頁");
+});
+app.get("/member/Communicator/memReserve", (req, res) => {
+  res.send("(會員)預約清單");
+});
+app.get("/member/Communicator/create", (req, res) => {
+  res.send("(會員)師資註冊");
 });
 
-app.get("/api/users/", (req, res) => {
-  const users = db.data.user.map((u) => {
-    const { id, password, ...others } = u;
-    return others;
-  });
-  const message = `獲取所有使用者的資料`;
-  res.status(200).json({ result: "success", message, data: users });
-});
+
+
 
 app.get("/api/users/search", (req, res) => {
   const { id } = req.query;
