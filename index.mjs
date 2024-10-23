@@ -49,23 +49,18 @@ app.get("/member/Communicator/create", (req, res) => {
   res.send("(會員)師資註冊");
 });
 
-
-<<<<<<< HEAD
-
-
-=======
 app.get("/api/users/search", (req, res) => {
   const { id } = req.query;
   const result = db.data.user.filter((u) => u.account.includes(id));
   const message = `${id} 的資料搜尋成功`;
   res.status(200).json({ result: "success", message, data: result });
+});
 app.get("/join", (req, res) => {
   res.send("活動");
 });
 app.get("/join/123", (req, res) => {
   res.send("活動123");
 });
->>>>>>> 42fda314b0d4b303cf8455489975e50ae7f2133f
 
 app.listen(3005, () => {
   console.log("server is running at http://localhost:3005");
