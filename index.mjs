@@ -50,10 +50,8 @@ app.get("/member/Communicator/create", (req, res) => {
 });
 
 
-<<<<<<< HEAD
 
 
-=======
 app.get("/api/users/search", (req, res) => {
   const { id } = req.query;
   const result = db.data.user.filter((u) => u.account.includes(id));
@@ -65,7 +63,6 @@ app.get("/join", (req, res) => {
 app.get("/join/123", (req, res) => {
   res.send("活動123");
 });
->>>>>>> 42fda314b0d4b303cf8455489975e50ae7f2133f
 
 app.listen(3005, () => {
   console.log("server is running at http://localhost:3005");
