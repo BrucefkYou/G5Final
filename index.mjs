@@ -39,9 +39,35 @@ app.get("/", (req, res) => {
 app.get("/product", (req, res) => {
   res.send("商品頁");
 });
-app.get("/product/summary", (req, res) => {
-  res.send("明細頁");
+app.get("/Communicator", (req, res) => {
+  res.send("寵物溝通師列表");
 });
+
+app.get("/Communicator/[id]", (req, res) => {
+  res.send("[師資id]");
+});
+app.get("/member/Communicator", (req, res) => {
+  res.send("寵物溝通師");
+});
+app.get("/member/Communicator/comReserve", (req, res) => {
+  res.send("(師資)預約清單");
+});
+app.get("/member/Communicator/detail", (req, res) => {
+  res.send("(師資)溝通師資料");
+});
+app.get("/member/Communicator/edit", (req, res) => {
+  res.send("(師資)資料編輯");
+});
+app.get("/member/Communicator/memReserve", (req, res) => {
+  res.send("(會員)預約清單");
+});
+app.get("/member/Communicator/create", (req, res) => {
+  res.send("(會員)師資註冊");
+});
+
+
+
+
 
 app.listen(3005, () => {
   console.log("server is running at http://localhost:3005");
