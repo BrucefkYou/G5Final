@@ -36,6 +36,12 @@ app.use(cors(corsOption));
 app.get("/", (req, res) => {
   res.send("首頁");
 });
+app.get("/product", (req, res) => {
+  res.send("商品頁");
+});
+app.get("/product/summary", (req, res) => {
+  res.send("明細頁");
+});
 
 app.listen(3005, () => {
   console.log("server is running at http://localhost:3005");
