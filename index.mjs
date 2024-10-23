@@ -49,9 +49,6 @@ app.get("/member/Communicator/create", (req, res) => {
   res.send("(會員)師資註冊");
 });
 
-
-
-
 app.get("/api/users/search", (req, res) => {
   const { id } = req.query;
   const result = db.data.user.filter((u) => u.account.includes(id));
@@ -98,4 +95,6 @@ function checkToken(req, res, next) {
   }
   // console.log(token);
   // Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiYmVuIiwibmFtZSI6IkJlbiBDaGVuIDIiLCJtYWlsIjoiYmVuQGdtYWlsLmNvbSIsImhlYWQiOiJodHRwczovL3JhbmRvbXVzZXIubWUvYXBpL3BvcnRyYWl0cy9tZW4vNTguanBnIiwiaWF0IjoxNzI5NTYxOTgxLCJleHAiOjE3Mjk1NjM3ODF9.Ryg3uLIitwJLhQKdwvN8LyxGBLa3A7zJ7IFcLQMzf5s
+
+  // join切換版本測試
 }
