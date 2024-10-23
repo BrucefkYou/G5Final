@@ -57,9 +57,11 @@ app.get("/api/users/search", (req, res) => {
   const result = db.data.user.filter((u) => u.account.includes(id));
   const message = `${id} 的資料搜尋成功`;
   res.status(200).json({ result: "success", message, data: result });
+});
 app.get("/join", (req, res) => {
   res.send("活動");
 });
+
 app.get("/join/123", (req, res) => {
   res.send("活動123");
 });
