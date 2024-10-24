@@ -40,30 +40,7 @@ app.get("/product", (req, res) => {
   res.send("商品頁");
 });
 app.get("/product/summary", (req, res) => {
-  res.send("明細頁");
-});
-app.get("/member/Communicator/memReserve", (req, res) => {
-  res.send("(會員)預約清單");
-});
-app.get("/member/Communicator/create", (req, res) => {
-  res.send("(會員)師資註冊");
-});
-
-
-
-
-app.get("/api/users/search", (req, res) => {
-  const { id } = req.query;
-  const result = db.data.user.filter((u) => u.account.includes(id));
-  const message = `${id} 的資料搜尋成功`;
-  res.status(200).json({ result: "success", message, data: result });
-});
-app.get("/join", (req, res) => {
-  res.send("活動");
-});
-
-app.get("/join/123", (req, res) => {
-  res.send("活動123");
+  res.send("明細頁111");
 });
 
 app.listen(3005, () => {
@@ -98,4 +75,6 @@ function checkToken(req, res, next) {
   }
   // console.log(token);
   // Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiYmVuIiwibmFtZSI6IkJlbiBDaGVuIDIiLCJtYWlsIjoiYmVuQGdtYWlsLmNvbSIsImhlYWQiOiJodHRwczovL3JhbmRvbXVzZXIubWUvYXBpL3BvcnRyYWl0cy9tZW4vNTguanBnIiwiaWF0IjoxNzI5NTYxOTgxLCJleHAiOjE3Mjk1NjM3ODF9.Ryg3uLIitwJLhQKdwvN8LyxGBLa3A7zJ7IFcLQMzf5s
+
+  // join-----切換版本測試 wei++
 }
