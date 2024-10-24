@@ -12,3 +12,5 @@
 devBruce pull check
 test
 test2
+
+test
