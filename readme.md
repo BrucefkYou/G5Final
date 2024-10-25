@@ -9,11 +9,15 @@
 . 莊維昕: 商品路由規則
 . 周彥宏: 溝通師路由規則
 
+<<<<<<<<< Temporary merge branch 1
+morning 1058
+=========
+
 devBruce pull check
-test
-test2
+>>>>>>>>> Temporary merge branch 2
 
 test
 1234
-dev支線 測試修改
+dev 支線 測試修改
 devBruce 測試修改
+kkk
