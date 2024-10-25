@@ -36,6 +36,12 @@ app.use(cors(corsOption));
 app.get("/", (req, res) => {
   res.send("首頁");
 });
+app.get("/product", (req, res) => {
+  res.send("商品頁");
+});
+app.get("/product/summary", (req, res) => {
+  res.send("明細頁111");
+});
 
 app.listen(3005, () => {
   console.log("server is running at http://localhost:3005");
@@ -69,4 +75,6 @@ function checkToken(req, res, next) {
   }
   // console.log(token);
   // Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiYmVuIiwibmFtZSI6IkJlbiBDaGVuIDIiLCJtYWlsIjoiYmVuQGdtYWlsLmNvbSIsImhlYWQiOiJodHRwczovL3JhbmRvbXVzZXIubWUvYXBpL3BvcnRyYWl0cy9tZW4vNTguanBnIiwiaWF0IjoxNzI5NTYxOTgxLCJleHAiOjE3Mjk1NjM3ODF9.Ryg3uLIitwJLhQKdwvN8LyxGBLa3A7zJ7IFcLQMzf5s
+
+  // join-----切換版本測試 wei++
 }
