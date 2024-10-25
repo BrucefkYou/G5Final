@@ -8,12 +8,9 @@
 . 胡德敏: 活動路由規則
 . 莊維昕: 商品路由規則
 . 周彥宏: 溝通師路由規則
-<<<<<<< HEAD
-=======
 
 devBruce pull check
 test
 test2
 
 test
->>>>>>> 7c10f10034013faaba3da5f7274809f9ca8e63ae
