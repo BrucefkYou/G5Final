@@ -76,5 +76,9 @@ function checkToken(req, res, next) {
   // console.log(token);
   // Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50IjoiYmVuIiwibmFtZSI6IkJlbiBDaGVuIDIiLCJtYWlsIjoiYmVuQGdtYWlsLmNvbSIsImhlYWQiOiJodHRwczovL3JhbmRvbXVzZXIubWUvYXBpL3BvcnRyYWl0cy9tZW4vNTguanBnIiwiaWF0IjoxNzI5NTYxOTgxLCJleHAiOjE3Mjk1NjM3ODF9.Ryg3uLIitwJLhQKdwvN8LyxGBLa3A7zJ7IFcLQMzf5s
 
+<<<<<<< HEAD
+  // join-----切換版本測試m jbnjbvuyhvbtyuuy
+=======
   // join-----切換版本測試 wei++
+>>>>>>> 082af2374e796d238335c8ba54dab7258547077d
 }
