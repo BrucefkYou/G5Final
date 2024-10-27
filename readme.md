@@ -14,10 +14,25 @@ morning 1058
 =========
 
 devBruce pull check
->>>>>>>>> Temporary merge branch 2
+
+> > > > > > > > > Temporary merge branch 2
 
 test
 1234
 dev 支線 測試修改
 devBruce 測試修改
 kkk
+
+devEDW test
+devEDWA test
+
+devEDWA test2
+devEDWA test3 0629
+devEDWA test4 0638
+Join test5
+devEDWA test6 0702
+Join test7
+devEDWA test7 0720
+join test8
+devEDWAR test 9
+11
